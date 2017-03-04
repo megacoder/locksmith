@@ -1,8 +1,6 @@
-LOCKSMITH
-=========
+# LOCKSMITH
 
-What
-----
+## What
 
 Locksmith is a small program which illustrates many progreamming techniques.
 
@@ -20,15 +18,13 @@ An "unlocked" looks like this:
 	$ ld -ld foo
 	drwxr-xrwx. 1 user user 112 Mar  3 22:09 foo
 
-Why
----
+## Why
 
 The goal of the code is to illustrate details of how the gcc(1) compiler features mesh with kernel coding techniques.
 
 N.B., the coding style is my own.  Please refer to the kernel documentation for the details of how the kernel code is structured.
 
-Points To Ponder
-----------------
+## Points To Ponder
 
-1) FIXME
-1) FIXME MORE
+1. FIXME
+2. FIXME MORE
