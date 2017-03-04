@@ -8,15 +8,19 @@ Externally, this program accepts one or more directory names and either locks or
 
 For example, a "locked" directory looks like this:
 
-	$ lock foo
-	$ ls -ld foo
-	drwxr-x---. 1 user user 112 Mar  3 22:09 foo
+```sh
+$ lock foo
+$ ls -ld foo
+drwxr-x---. 1 user user 112 Mar  3 22:09 foo
+```
 
 An "unlocked" looks like this:
 
-	$ unlock foo
-	$ ld -ld foo
-	drwxr-xrwx. 1 user user 112 Mar  3 22:09 foo
+```sh
+$ unlock foo
+$ ld -ld foo
+drwxr-xrwx. 1 user user 112 Mar  3 22:09 foo
+```
 
 ## Why
 
