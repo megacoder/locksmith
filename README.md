@@ -8,7 +8,7 @@ Externally, this program accepts one or more directory names and either locks or
 
 For example, a "locked" directory looks like this:
 
-```sh
+```bash
 $ lock foo
 $ ls -ld foo
 drwxr-x---. 1 user user 112 Mar  3 22:09 foo
@@ -16,7 +16,7 @@ drwxr-x---. 1 user user 112 Mar  3 22:09 foo
 
 An "unlocked" looks like this:
 
-```sh
+```bash
 $ unlock foo
 $ ld -ld foo
 drwxr-xrwx. 1 user user 112 Mar  3 22:09 foo
