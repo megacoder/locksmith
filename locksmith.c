@@ -28,7 +28,7 @@ typedef	enum	{
 	Role_mustbelast
 } Role_t;
 
-static	Role_t		role= Role_lock;
+static	Role_t		role = Role_lock;
 
 static	Perms_t		perms[ Role_mustbelast ] =	{
 	[Role_lock] =	{
@@ -88,7 +88,7 @@ common_callback(
 
 	stopScan = 0;
 	do	{
-		mode_t const	orig = st->st_mode & 
+		mode_t const	orig = st->st_mode &
 					(S_IRWXU | S_IRWXG | S_IRWXO);
 		mode_t		new;
 		int		e;
@@ -155,7 +155,7 @@ process(
 			break;
 		}
 		/* Walk the tree in the proper style for this role	*/
-		status = nftw( 
+		status = nftw(
 			fn,
 			role_callback,
 			64,
@@ -194,10 +194,10 @@ main(
 		switch( c )	{
 		default:
 			fprintf(
-				stderr, 
-				"%s: -%c not implemented yet!\n", 
-				me, 
-				c 
+				stderr,
+				"%s: -%c not implemented yet!\n",
+				me,
+				c
 			);
 			exit( 1 );
 		case '?':
@@ -224,7 +224,7 @@ main(
 	} else if( !strcmp( spelling, "unlock" ) )	{
 		role = Role_unlock;
 		role_callback = common_callback;
-	} 
+	}
 	if( ! role_callback )	{
 		fprintf(
 			stderr,
@@ -263,8 +263,8 @@ main(
 			}
 			/* Trim surrounding whitespace			*/
 			for( bp = buf; *bp && isspace( *bp ); ++bp );
-			for( 
-				eos = bp + strlen( bp ); 
+			for(
+				eos = bp + strlen( bp );
 				(eos > bp) && isspace( eos[-1] );
 				*--eos = '\0'
 			);
